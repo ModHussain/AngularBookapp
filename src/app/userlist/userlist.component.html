@@ -1,0 +1,24 @@
+
+<div class="container">
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+<th class="text-center">#</th>
+<th class="text-center">
+  <span class="fa fa-user-circle-o" ></span> Name</th>
+<th class="text-center">
+<span class="fa fa-envelope-o"></span> Email</th>
+<th class="text-center">
+<span class="fa fa-phone"></span> Phone Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; let i=index">
+      <td class="text-center">{{i+1}}</td>
+      <td class="text-center">{{user.name}}</td>
+      <td class="text-center">{{user.email}}</td>
+      <td class="text-center">{{user.phoneno}}</td>
+    </tr>
+    </tbody>
+    </table>
+</div>
