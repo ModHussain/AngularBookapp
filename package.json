@@ -4,7 +4,7 @@
   "scripts": {
     "start": "npm run build & concurrently --kill-others \"npm run serve-api\" \"npm run serve\"",
     "serve": "ng serve --proxy-config proxy.conf.json",
-    "serve-api": "nodemon server.js",
+    "serve-api": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
